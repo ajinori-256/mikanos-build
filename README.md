@@ -1,5 +1,4 @@
 # mikanos-build
-
 このリポジトリは uchan が開発している教育用 OS [MikanOS](https://github.com/uchan-nos/mikanos) をビルドする手順およびツールを収録しています。
 Ubuntu 18.04 で動作を確認しています。
 
@@ -118,7 +117,7 @@ EDK II のディレクトリに MikanOS ブートローダーのディレクト�
 | ACTIVE_PLATFORM | MikanLoaderPkg/MikanLoaderPkg.dsc |
 | TARGET          | DEBUG                             |
 | TARGET_ARCH     | X64                               |
-| TOOL_CHAIN_TAG  | CLANG38                           |
+| TOOL_CHAIN_TAG  | CLANGDWARF                        |
 
 設定が終わったらブートローダーをビルドします。
 
@@ -128,7 +127,7 @@ EDK II のディレクトリに MikanOS ブートローダーのディレクト�
 
 Loader.efi ファイルが出力されていればビルド成功です。
 
-    $ ls Build/MikanLoaderX64/DEBUG_CLANG38/X64/Loader.efi
+    $ ls Build/MikanLoaderX64/DEBUG_CLANGDWARF/X64/Loader.efi
 
 ## MikanOS のビルド
 
