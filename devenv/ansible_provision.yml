@@ -6,9 +6,9 @@
       apt:
         name:
           - build-essential
-          - llvm-7-dev
-          - lld-7
-          - clang-7
+          - llvm-dev
+          - lld
+          - clang
           - nasm
           - acpica-tools
           - uuid-dev
